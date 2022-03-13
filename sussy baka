@@ -1,0 +1,235 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Executed";
+	Text = "Press G to open/close!";
+	Duration = 15;
+})
+
+local InsertedObjects = Instance.new("ScreenGui")
+local Gradient = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local xcom = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local project = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local opdino = Instance.new("TextButton")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local violex = Instance.new("TextButton")
+local Shadow_4 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+InsertedObjects.Name = "InsertedObjects"
+InsertedObjects.Parent = game.CoreGui
+
+Gradient.Name = "Gradient"
+Gradient.Parent = InsertedObjects
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient.BorderSizePixel = 0
+Gradient.Position = UDim2.new(0.397810221, 0, 0.183896616, 0)
+Gradient.Size = UDim2.new(0, 261, 0, 281)
+Gradient.Active = true
+Gradient.Draggable = true
+
+local UserInputSevice = game:GetService("UserInputService")
+
+UserInputSevice.InputBegan:Connect(function(InputKey)
+	if InputKey.KeyCode == Enum.KeyCode.G then
+		if Gradient.Visible == true then
+			Gradient.Visible = false
+		elseif Gradient.Visible == false then
+			Gradient.Visible = true
+		end
+		end
+		end)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(85, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(187, 152, 255))}
+UIGradient.Parent = Gradient
+
+UICorner.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner.Parent = Gradient
+
+main.Name = "main"
+main.Parent = Gradient
+main.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+main.Position = UDim2.new(0.0360125042, 0, 0.0293512307, 0)
+main.Size = UDim2.new(0, 241, 0, 263)
+
+
+UICorner_2.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_2.Parent = main
+
+xcom.Name = "xcom"
+xcom.Parent = main
+xcom.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+xcom.BorderSizePixel = 0
+xcom.Position = UDim2.new(0.126234457, 0, 0.219857141, 0)
+xcom.Size = UDim2.new(0, 180, 0, 45)
+xcom.ZIndex = 2
+xcom.Font = Enum.Font.GothamSemibold
+xcom.Text = ""
+xcom.TextColor3 = Color3.fromRGB(255, 255, 255)
+xcom.TextScaled = true
+xcom.TextSize = 14.000
+xcom.TextWrapped = true
+xcom.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Xcom911/DS/main/HoneyBadger'))()
+end)
+
+Shadow.Name = "Shadow"
+Shadow.Parent = xcom
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel.Parent = xcom
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "HoneyBadger"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+project.Name = "project"
+project.Parent = main
+project.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+project.BorderSizePixel = 0
+project.Position = UDim2.new(0.125899523, 0, 0.588404775, 0)
+project.Size = UDim2.new(0, 180, 0, 45)
+project.ZIndex = 2
+project.Font = Enum.Font.GothamSemibold
+project.Text = ""
+project.TextColor3 = Color3.fromRGB(255, 255, 255)
+project.TextScaled = true
+project.TextSize = 14.000
+project.TextWrapped = true
+project.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NoobHackel/Dinosaur-Simulator-Script/main/ProjectROHCracked'),true))()
+end)
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = project
+Shadow_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_2.Parent = project
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel_2.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Project ROH"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+opdino.Name = "opdino"
+opdino.Parent = main
+opdino.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+opdino.BorderSizePixel = 0
+opdino.Position = UDim2.new(0.126234457, 0, 0.402625293, 0)
+opdino.Size = UDim2.new(0, 180, 0, 45)
+opdino.ZIndex = 2
+opdino.Font = Enum.Font.GothamSemibold
+opdino.Text = ""
+opdino.TextColor3 = Color3.fromRGB(255, 255, 255)
+opdino.TextScaled = true
+opdino.TextSize = 14.000
+opdino.TextWrapped = true
+opdino.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://auth.kinghub.one/free/"))()
+end)
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = opdino
+Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_3.Parent = opdino
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel_3.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "OPDINO"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+violex.Name = "violex"
+violex.Parent = main
+violex.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+violex.BorderSizePixel = 0
+violex.Position = UDim2.new(0.125899523, 0, 0.774716556, 0)
+violex.Size = UDim2.new(0, 180, 0, 45)
+violex.ZIndex = 2
+violex.Font = Enum.Font.GothamSemibold
+violex.Text = ""
+violex.TextColor3 = Color3.fromRGB(255, 255, 255)
+violex.TextScaled = true
+violex.TextSize = 14.000
+violex.TextWrapped = true
+violex.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/albibos/violexian/main/violexiangui"))()
+end)
+
+Shadow_4.Name = "Shadow"
+Shadow_4.Parent = violex
+Shadow_4.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_4.BorderSizePixel = 0
+Shadow_4.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_4.Parent = violex
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.544444442, 0)
+TextLabel_4.Size = UDim2.new(1, -20, 1, -20)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.GothamSemibold
+TextLabel_4.Text = "Violexian"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Gradient
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.152847931, 0, 0.0291133896, 0)
+TextLabel_5.Size = UDim2.new(0, 180, 0, 57)
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "DS Script Hub"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+TextLabel_5.TextStrokeTransparency = 0.000
